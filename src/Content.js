@@ -6,12 +6,11 @@ const SCP = scp.map(
     (scp) => 
     {
         return(
-           
-
-            <div key={scp}>
+                <div key={scp}>
                 <h2>{scp.item}</h2>
+                
                 <b><p>Object: {scp.object}</p></b>
-                <img src={scp.image}/>
+                
             <p>Procedure:{scp.procedure}</p>
             <p>Description:{scp.description}</p>
             <p>Reference:{scp.reference}</p>
@@ -45,6 +44,8 @@ class Content extends Component {
         return (
             <div className="row">
                    {SCP}
+                    <h1>{scp.title}</h1>
+                    <h2 className="card-title"> {scp.image}</h2>
                    {scpsix}
                    
             </div>
